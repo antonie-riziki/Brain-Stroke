@@ -1,0 +1,7 @@
+[app]
+key = "value"
+other_key = [ 1, 2, 3,]
+
+[server]
+headless = true
+port = 8501
