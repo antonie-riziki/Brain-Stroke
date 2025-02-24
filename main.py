@@ -106,7 +106,7 @@ with data_loading:
 			cols = ['ever_married', 'work_type', 'Residence_type', 'smoking_status', 'stroke']
 			obj_cols = st.selectbox('Select a Series', df[cols].columns)
 			bar_plt = plt.figure()
-			sb.countplot(df[obj_cols], hue=df['gender'])
+			sb.countplot(data=df, df[obj_cols], hue=df['gender'])
 			plt.title('Popularity Distribution of ' + obj_cols + ' against Gender')
 			st.pyplot(bar_plt)
 
