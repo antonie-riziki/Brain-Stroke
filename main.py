@@ -82,7 +82,7 @@ with data_loading:
 		st.markdown('We look at the Pearsons Correlation of the Dataset')
 		fig = plt.figure()
 		plt.title('Pearsons Correlation of Coefficients')
-		sb.heatmap(df.corr(), annot = True, linewidth = 0.3)
+		# sb.heatmap(df.corr(), annot = True, linewidth = 0.3)
 		st.pyplot(fig)
 	
 
