@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, plot_confusion_matrix, recall_score, precision_score
+from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_score
 
 #%matplotlib inline
 
@@ -186,7 +186,7 @@ with feature_eng:
 	    pred = model.predict(x_test)
 	    
 	    conf_fig = plt.figure()
-	    plot_confusion_matrix(model, x_test, y_test, cmap = 'Blues')
+	    # plot_confusion_matrix(model, x_test, y_test, cmap = 'Blues')
 	    plt.title('Confusion Matrix for ' + str(model))
 	    plt.show()
 	    #st.pyplot(conf_fig)
