@@ -61,7 +61,7 @@ with head_section:
 	""")
 
 with data_loading:
-	df = pd.read_csv(r"D:\Open Classroom\Datasets\Brain Stroke Dataset\brain_stroke.csv")
+	df = pd.read_csv(r"brain_stroke.csv")
 	with st.spinner("Loading dataset..."):
 		time.sleep(5)
 		st.success("Done!")
